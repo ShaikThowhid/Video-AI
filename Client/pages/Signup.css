@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the form to the right on desktop */
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://rssurvey.ev-image.com/dq_wrb_assets/img/login/login_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .signup-box {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background with a blur effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin-right: 50px; /* Adds some space between the form and the edge of the screen */
+  }
+  
+  .signup-box h2 {
+    font-size: 2rem;
+    color: #1710f2;
+    margin-bottom: 20px;
+  }
+  
+  .signup-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signup-box input[type="email"],
+  .signup-box input[type="text"],
+  .signup-box input[type="password"] {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .signup-box input[type="submit"] {
+    padding: 15px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-box input[type="submit"]:hover {
+    background-color: #003377;
+  }
+  
+  .signup-box .login-link {
+    margin-top: 15px;
+    color: #000000;
+    font-size: 0.9rem;
+  }
+  
+  .signup-box .login-link a {
+    color: #ff4a57;
+    text-decoration: none;
+  }
+  
+  .signup-box .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .signup-container {
+      justify-content: center; /* On smaller screens, center the form */
+    }
+  
+    .signup-box {
+      margin-right: 0; /* Remove the right margin on mobile screens */
+      padding: 20px;
+    }
+  }
+  
